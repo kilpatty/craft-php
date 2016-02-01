@@ -1,4 +1,4 @@
-###Docker Image Of PHP-FPM for Craft CMS
+#Docker Image Of PHP-FPM for Craft CMS
 This is a docker image running Php-fpm specifically designed for Craft CMS. The plugins that have been installed can be seen on the (Craft CMS Website)[https://craftcms.com/docs/requirements]
 
 ##Usage
