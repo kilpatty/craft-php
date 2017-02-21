@@ -7,11 +7,13 @@ RUN apt-get update && apt-get install -y libmagickwand-6.q16-dev --no-install-re
 && echo "extension=imagick.so" > /usr/local/etc/php/conf.d/ext-imagick.ini
 
 RUN apt-get update && apt-get install -y \
-    libmcrypt-dev
+    libmcrypt-dev \
+    zlib1g-dev
 
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install mbstring
 RUN docker-php-ext-install mcrypt
+RUN docker-php-ext-install zip
 
 RUN usermod -u 1000 www-data
 RUN usermod -G staff www-data
